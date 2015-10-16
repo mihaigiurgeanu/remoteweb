@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>Bootstrap 101 Template</title>
+        <title>Home Light</title>
 
         <!-- Bootstrap -->
         <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -19,13 +19,23 @@
     </head>
     <body>
 
-        <div style="height:50vh"><button type="button" class="btn btn-success btn-lg" style="width: 100%; height: 100%">On</button></div>
-        <div style="height:50vh"><button type="button" class="btn btn-danger btn-lg" style="width: 100%; height: 100%">Off</button></div>
+        <div style="height:50vh"><button type="button" id="on-button" class="btn btn-success btn-lg" style="width: 100%; height: 100%">On</button></div>
+        <div style="height:50vh"><button type="button" id="off-button" class="btn btn-danger btn-lg" style="width: 100%; height: 100%">Off</button></div>
 
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="/static/bootstrap/js/bootstrap.min.js"></script>
+
+        <script>
+            $("#on-button").click(function() {
+                alert("On");
+            });
+
+            $("#off-button").click(function() {
+                alert("Off");
+            });
+        </script>
     </body>
 </html>
