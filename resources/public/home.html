@@ -30,11 +30,11 @@
 
         <script>
             $("#on-button").click(function() {
-                alert("On");
+                $.get("/actions/on");
             });
 
             $("#off-button").click(function() {
-                alert("Off");
+                $.get("/actions/off");
             });
         </script>
     </body>
