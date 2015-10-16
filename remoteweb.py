@@ -7,7 +7,7 @@ def index(name):
 
 @route('/static/<filepath:path>')
 def server_static(filepath):
-  return static_file(filepath, root='C:\\Documents and Settings\\Work\\Projects\\remoteweb\\resources\\public')
+  return static_file(filepath, root='resources/public')
 
 
 run(host='localhost', port=8080)
